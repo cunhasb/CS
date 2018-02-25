@@ -1,23 +1,22 @@
 # Class representing a singly list element
 class Element
   def initialize(*value)
-    @value=value
-    @next= None
+    @value = value
+    @next = None
   end
 end
 
-
 # New class representing singly linked lists, it takes an element as the head,
 # if it does not contain one it will be set to None
-class linkedList
+class LinkedList
   @head = None
-  def initialize(new_element)
-    current = self.head
+  def initialize(_new_element)
+    current = head
+  end
 
-    if self.head
-      while current.next
-        current = current.next
-      end
+  def append(new_element)
+    if head
+      current = current.next while current.next
       current.next = new_element
     else
       current.nex = new_element

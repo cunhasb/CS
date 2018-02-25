@@ -1,5 +1,3 @@
-// Class representing singly list
-
 // Class representing the element of a singly List
 class Element {
   constructor(value) {
@@ -11,3 +9,5 @@ class Element {
 }
 
 newList = new LinkedList(10);
+
+// Class representing singly list
