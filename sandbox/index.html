@@ -1,0 +1,51 @@
+<!-- An Html document is comprised of two declarations DOCTYPE and Html. -->
+<!-- DOCTYPE defines what version of the html document-->
+<!DOCTYPE html>
+<!-- the second declaration is the html tag which will include all the structure and content of the html file -->
+<html>
+<!-- The html is divided in two sections Head and body. -->
+  <head>
+    <!-- head contains information about the page, and external files -->
+    <title>My static Page</title>
+    <!--the metadata defines information about the document, in order to validade a HTML 5 page, a least the charset has to be defined, metadata is usually used and displayed by search engines, on its results -->
+    <!-- charset defines the type of character encoding for the file-->
+    <meta charset='utf-8'>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name='description' content='A basic structure of a static webpage'>
+    <meta name ='keywords' content = 'WEBPAGE,webpage,static,dynamic,html,css,simple'>
+    <link rel="/favicon/apple-touch-icon" sizes="57x57" href="./public//favicon/apple-icon-57x57.png">
+    <link rel="/favicon/apple-touch-icon" sizes="60x60" href="./public//favicon/apple-icon-60x60.png">
+    <link rel="/favicon/apple-touch-icon" sizes="72x72" href="./public//favicon/apple-icon-72x72.png">
+    <link rel="favicon/apple-touch-icon" sizes="76x76" href="./public/favicon/apple-icon-76x76.png">
+    <link rel="favicon/apple-touch-icon" sizes="114x114" href="./public/favicon/apple-icon-114x114.png">
+    <link rel="favicon/apple-touch-icon" sizes="120x120" href="./public/favicon/apple-icon-120x120.png">
+    <link rel="favicon/apple-touch-icon" sizes="144x144" href="./public/favicon/apple-icon-144x144.png">
+    <link rel="favicon/apple-touch-icon" sizes="152x152" href="./public/favicon/apple-icon-152x152.png">
+    <link rel="favicon/apple-touch-icon" sizes="180x180" href="./public/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./public/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel='stylesheet' href='./stylesheets/index.css'
+  </head>
+  <body>
+    <div>My div
+      <button onmouseover="document.getElementById('time').innerHTML=Date()"
+       onclick="ChangeFontSize('time')"
+       onmouseleave="document.getElementById('time').innerHTML=''">click me for the date and time
+      </button>
+      <p id="time"></p>
+      <p id='demo'></p>
+      <blink>This is just a test </blink>
+    <div>
+      <script>
+      let mytext = document.getElementById("demo");
+mytext.style.fontSize = "35px";
+mytext.style.color = "red";
+mytext.innerHTML = "this is my content";
+</script>
+<script src='index.js'></script></body>
+</html>
