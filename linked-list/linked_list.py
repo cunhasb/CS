@@ -68,6 +68,7 @@ class LinkedList(object):
 
     def delete_first(self):
         if self.head:
-            first = self.head
+            deleted = self.head
             self.head = self.head.next
-            return first
+            deleted.next = None
+            return deleted
